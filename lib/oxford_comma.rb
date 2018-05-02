@@ -11,5 +11,5 @@ def oxford_comma(array)
       el << ','
     end
     array.join(' ')
-end
+  end
 end

@@ -1,9 +1,12 @@
 def oxford_comma(array)
-  array.insert(-2, 'and')
-  new_arr = []
-  array.each do |el|
+  if array.size == 1 
+    array.join
+  elsif array.size == 2
+    array.insert(-2, 'and').join(' ')
+  else
+    new_arr = []
+    array.each do |el|
     break if el == 'and'
     el << ','
   end
-  array.join(' ')
 end

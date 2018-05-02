@@ -10,3 +10,4 @@ def oxford_comma(array)
     el << ','
   end
 end
+end
